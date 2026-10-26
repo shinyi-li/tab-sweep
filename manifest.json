@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Sweep",
+  "version": "0.1.0",
+  "description": "Find duplicate tabs and close them with one click.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Tab Sweep",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tab Sweep</h1>
+      <div class="scope" role="group" aria-label="Scope">
+        <button id="scope-window" data-scope="window">This window</button>
+        <button id="scope-all" data-scope="all">All windows</button>
+      </div>
+    </header>
+    <div class="summary-row">
+      <span id="summary"></span>
+      <span><button id="select-all" class="link">All</button> · <button id="select-none" class="link">None</button></span>
+    </div>
+    <main id="groups"></main>
+    <footer>
+      <button id="close-btn" class="primary" disabled>Close duplicates</button>
+      <button id="undo-btn" hidden>Undo</button>
+    </footer>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

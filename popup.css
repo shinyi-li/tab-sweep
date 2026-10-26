@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { width: 380px; margin: 0; font: 13px system-ui, sans-serif; color: #222; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; }
+h1 { font-size: 15px; margin: 0; }
+.scope { display: flex; border: 1px solid #ccc; border-radius: 6px; overflow: hidden; }
+.scope button { border: 0; background: #fff; padding: 4px 8px; cursor: pointer; font: inherit; }
+.scope button.active { background: #222; color: #fff; }
+#summary { color: #666; }
+.summary-row { display: flex; justify-content: space-between; padding: 0 12px 8px; color: #666; }
+.link { border: 0; background: none; color: #1a5fd0; cursor: pointer; font: inherit; padding: 0; }
+.tab input, .box-spacer { width: 14px; height: 14px; margin: 0; flex: none; }
+#groups { max-height: 360px; overflow-y: auto; border-top: 1px solid #eee; }
+.group { padding: 8px 12px; border-bottom: 1px solid #eee; }
+.group-url { font-size: 11px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tab { display: flex; align-items: center; gap: 6px; padding: 4px 0; }
+.tab img { width: 14px; height: 14px; flex: none; }
+.tab-title { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tab.close .tab-title { text-decoration: line-through; color: #999; }
+.badge { font-size: 10px; padding: 1px 5px; border-radius: 8px; background: #eee; color: #555; flex: none; }
+.badge.keep { background: #d9f2dd; color: #1e6b2e; }
+.goto { border: 0; background: none; color: #1a5fd0; cursor: pointer; font: inherit; flex: none; }
+.empty { padding: 24px 12px; text-align: center; color: #888; }
+footer { display: flex; gap: 8px; padding: 10px 12px; }
+footer button { padding: 6px 10px; border-radius: 6px; border: 1px solid #ccc; background: #fff; cursor: pointer; font: inherit; }
+footer button.primary { flex: 1; background: #c62828; border-color: #c62828; color: #fff; }
+footer button:disabled { opacity: 0.4; cursor: default; }
+
+.slot { display: flex; justify-content: center; flex: none; margin-left: 4px; }
+.slot .badge { flex: 1; text-align: center; white-space: nowrap; }
+.slot button { white-space: nowrap; padding: 0; }
+.slot-window { width: 58px; }
+.slot-keep { width: 56px; }
+.slot-go { width: 20px; }
