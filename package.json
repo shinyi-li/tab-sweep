@@ -1,0 +1,8 @@
+{
+  "name": "tab-sweep",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/"
+  }
+}
